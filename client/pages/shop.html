@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop all Gen-Z streetwear at DRIP STORE. Filter by category, size, price and find your perfect fit.">
+  <title>Shop | DRIP STORE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-drip" id="mainNavbar"></nav>
+
+  <section class="section-drip" style="padding-top: 2rem;">
+    <div class="container">
+      <!-- Header -->
+      <div class="row mb-4 align-items-center">
+        <div class="col-md-6">
+          <h1 class="section-title text-start mb-1" style="font-size:1.8rem;">All Products</h1>
+          <p class="text-muted mb-0" id="resultsCount">Loading...</p>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex gap-2 justify-content-md-end mt-3 mt-md-0">
+            <div class="search-bar flex-grow-1" style="max-width:300px;">
+              <i class="bi bi-search text-muted"></i>
+              <input type="text" id="searchInput" placeholder="Search products...">
+            </div>
+            <select id="sortSelect" class="form-select" style="background:var(--bg-card); color:var(--text-primary); border-color:var(--border-color); width:auto;">
+              <option value="newest">Newest</option>
+              <option value="priceLow">Price: Low to High</option>
+              <option value="priceHigh">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Filters Sidebar -->
+        <div class="col-lg-3 mb-4">
+          <div class="filter-sidebar">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="fw-bold mb-0"><i class="bi bi-funnel me-2"></i>Filters</h5>
+              <button class="btn btn-sm text-muted" id="clearFilters">Clear All</button>
+            </div>
+
+            <!-- Category -->
+            <h6>Category</h6>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input category-check" type="checkbox" value="tshirt" id="catTshirt">
+                <label class="form-check-label" for="catTshirt">T-Shirts</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input category-check" type="checkbox" value="hoodie" id="catHoodie">
+                <label class="form-check-label" for="catHoodie">Hoodies</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input category-check" type="checkbox" value="jogger" id="catJogger">
+                <label class="form-check-label" for="catJogger">Joggers</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input category-check" type="checkbox" value="co-ord" id="catCoord">
+                <label class="form-check-label" for="catCoord">Co-ords</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input category-check" type="checkbox" value="accessories" id="catAcc">
+                <label class="form-check-label" for="catAcc">Accessories</label>
+              </div>
+            </div>
+
+            <!-- Size -->
+            <h6>Size</h6>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <button class="size-filter-btn" data-size="XS">XS</button>
+              <button class="size-filter-btn" data-size="S">S</button>
+              <button class="size-filter-btn" data-size="M">M</button>
+              <button class="size-filter-btn" data-size="L">L</button>
+              <button class="size-filter-btn" data-size="XL">XL</button>
+              <button class="size-filter-btn" data-size="XXL">XXL</button>
+            </div>
+
+            <!-- Price Range -->
+            <h6>Max Price</h6>
+            <div class="price-range-slider mb-3">
+              <input type="range" id="priceRange" min="100" max="10000" value="10000" step="100">
+              <div class="d-flex justify-content-between mt-1">
+                <small class="text-muted">₹100</small>
+                <small class="fw-bold" id="priceLabel">₹10,000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-lg-9">
+          <div class="row" id="productGrid">
+            <div class="col-12 text-center py-5"><div class="spinner-drip"></div></div>
+          </div>
+          <div id="paginationContainer" class="mt-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-drip" id="mainFooter"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DRIP STORE - Wear the Vibe. Shop Gen-Z streetwear, oversized fits, Y2K fashion, hoodies, joggers and more.">
+  <title>DRIP STORE | Wear the Vibe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-drip" id="mainNavbar"></nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container position-relative" style="z-index:1;">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <span class="tag-badge mb-3 d-inline-block" style="font-size:0.85rem;">🔥 New Season Drops</span>
+          <h1 class="hero-title">
+            Wear the<br>
+            <span class="gradient-text">Vibe.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Streetwear for the bold. Oversized fits, Y2K energy, and the drip 
+            that hits different. Made for Gen-Z, by Gen-Z.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="/pages/shop.html" class="btn btn-drip">
+              Shop Now <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <a href="#categories" class="btn btn-drip-outline">
+              Explore Categories
+            </a>
+          </div>
+          <div class="d-flex gap-4 mt-4">
+            <div>
+              <div class="fw-bold fs-4 text-gradient">500+</div>
+              <small class="text-muted">Products</small>
+            </div>
+            <div>
+              <div class="fw-bold fs-4 text-gradient">50K+</div>
+              <small class="text-muted">Happy Customers</small>
+            </div>
+            <div>
+              <div class="fw-bold fs-4 text-gradient">4.9★</div>
+              <small class="text-muted">Rating</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <div style="font-size: 12rem; line-height: 1; opacity: 0.15; position: absolute; right: 0; top: 50%; transform: translateY(-50%);">🔥</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section-drip" id="categories">
+    <div class="container">
+      <h2 class="section-title">Shop by <span class="text-gradient">Category</span></h2>
+      <p class="section-subtitle">Find your vibe from our curated collections</p>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg">
+          <a href="/pages/shop.html?category=tshirt" style="text-decoration:none; color:inherit;">
+            <div class="category-card">
+              <span class="icon">👕</span>
+              <h5>T-Shirts</h5>
+              <small class="text-muted">Oversized & Graphic</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="/pages/shop.html?category=hoodie" style="text-decoration:none; color:inherit;">
+            <div class="category-card">
+              <span class="icon">🧥</span>
+              <h5>Hoodies</h5>
+              <small class="text-muted">Cozy & Drippy</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="/pages/shop.html?category=jogger" style="text-decoration:none; color:inherit;">
+            <div class="category-card">
+              <span class="icon">👖</span>
+              <h5>Joggers</h5>
+              <small class="text-muted">Cargos & Tech</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="/pages/shop.html?category=co-ord" style="text-decoration:none; color:inherit;">
+            <div class="category-card">
+              <span class="icon">👔</span>
+              <h5>Co-ords</h5>
+              <small class="text-muted">Matching Sets</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <a href="/pages/shop.html?category=accessories" style="text-decoration:none; color:inherit;">
+            <div class="category-card">
+              <span class="icon">🧢</span>
+              <h5>Accessories</h5>
+              <small class="text-muted">Hats, Chains & More</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Drops -->
+  <section class="section-drip" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="text-gradient">Drops</span> 🔥</h2>
+      <p class="section-subtitle">Curated picks that are selling fast</p>
+      <div class="row g-3" id="featuredGrid">
+        <div class="col-12 text-center py-5"><div class="spinner-drip"></div></div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="/pages/shop.html" class="btn btn-drip-outline">
+          View All Products <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why DRIP STORE -->
+  <section class="section-drip">
+    <div class="container">
+      <h2 class="section-title">Why <span class="text-gradient">DRIP STORE</span>?</h2>
+      <p class="section-subtitle">More than just clothes — it's a movement</p>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="category-card text-start h-100">
+            <span class="icon">🚀</span>
+            <h5>Fast Delivery</h5>
+            <p class="text-muted mt-2 mb-0">Free shipping on orders above ₹999. Get your drip in 3-5 days.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card text-start h-100">
+            <span class="icon">💎</span>
+            <h5>Premium Quality</h5>
+            <p class="text-muted mt-2 mb-0">Handpicked fabrics, 240 GSM cotton, and builds that last.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card text-start h-100">
+            <span class="icon">🔄</span>
+            <h5>Easy Returns</h5>
+            <p class="text-muted mt-2 mb-0">Don't vibe with it? 7-day hassle-free returns, no questions asked.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-drip" id="mainFooter"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/shop.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFeaturedProducts();
+    });
+  </script>
+</body>
+</html>
