@@ -1,5 +1,5 @@
 /* ============================
-   DRIP STORE - API Wrapper
+   API Wrapper
    ============================ */
 
 const BASE = '/api/v1';

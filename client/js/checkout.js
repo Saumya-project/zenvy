@@ -1,5 +1,5 @@
 /* ============================
-   DRIP STORE - Checkout Logic
+   Checkout Logic
    (Demo Payment Mode)
    ============================ */
 

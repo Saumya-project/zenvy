@@ -1,5 +1,5 @@
 /* ============================
-   DRIP STORE - Auth Logic
+   Auth Logic
    ============================ */
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,5 +1,5 @@
 /* ============================
-   DRIP STORE - Shop Logic
+   Shop Logic
    ============================ */
 
 let currentPage = 1;

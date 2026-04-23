@@ -1,5 +1,5 @@
 /* ============================
-   DRIP STORE - Admin Logic
+   Admin Logic
    ============================ */
 
 document.addEventListener('DOMContentLoaded', () => {

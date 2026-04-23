@@ -1,7 +1,7 @@
 {
   "name": "drip-store",
   "version": "1.0.0",
-  "description": "DRIP STORE - Wear the Vibe | Gen-Z Streetwear Ecommerce",
+  "description": "ZENVY - Wear the Vibe | Gen-Z Streetwear Ecommerce",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
