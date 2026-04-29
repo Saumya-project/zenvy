@@ -1,5 +1,5 @@
 /* ============================
-   DRIP STORE - Cart Logic
+   Cart Logic
    ============================ */
 
 document.addEventListener('DOMContentLoaded', () => {

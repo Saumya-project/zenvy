@@ -1,4 +1,4 @@
-# 🔥 DRIP STORE - Wear the Vibe
+# 🔥 ZENVY - Wear the Vibe
 
 > Gen-Z Streetwear Ecommerce Platform | MERN Stack
 
